@@ -1,3 +1,4 @@
+#/bin/bash
 rm -rf output
 rm *.log
 rm shu-thesis.pdf
@@ -8,4 +9,5 @@ rm *.out
 rm *.aux
 rm *.blg
 rm *.gz
+rm *.toc
 rm *.toc
