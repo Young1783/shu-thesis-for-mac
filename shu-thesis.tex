@@ -98,7 +98,7 @@ colorlinks
 
 %====================================================
 %常用的命令
-\newcommand{\red}[1]{{\textcolor{red}{#1}}}%
+\newcommand{\red}[1]{{\TeX tcolor{red}{#1}}}%
 %====================================================
 
 %====================================================
@@ -135,22 +135,22 @@ colorlinks
 \section{绪论}
 \pagenumbering{arabic} % 正文开始，页码使用阿拉伯数字
 \setcounter{page}{1}
-\subsection{关于\LaTeX模板}
-这个\LaTeX是我为了写学位论文而写的，本项目的主页为 \url{http://kaiz.xyz/shu-thesis}，
+\subsection{关于\LaTeX  模板}
+这个\LaTeX  是我为了写学位论文而写的，本项目的主页为 \url{http://kaiz.xyz/shu-thesis}，
 代码都host在\href{https://github.com/zeakey/shu-thesis}{Github}。
 %
 虽然这个模板写的很简陋，但是完成学位论文写作应该是够用了。
 
-\subsection{关于\TeX和\LaTeX}
-\href{https://en.wikipedia.org/wiki/TeX}{\TeX}是由图灵奖得主，程序(program)和算法(algorithm)这两个概念的
+\subsection{关于\TeX 和\LaTeX  }
+\href{https://en.wikipedia.org/wiki/TeX}{\TeX }是由图灵奖得主，程序(program)和算法(algorithm)这两个概念的
 提出者，《计算机程序设计的艺术》(The Art of Computer Programming)的作者，著名计算机科学家
 Donald E. Knuth（高德纳）发明的排版系统。TeX是特别优秀的排版工具，尤其善于处理复杂的图表和公式。
 %
-\href{https://en.wikipedia.org/wiki/LaTeX}{\LaTeX}（拉泰赫）是一种基于\TeX的排版系统，由由美国计算机学家Leslie Lamport（莱斯利·兰伯特）在20世纪80年代初期开发，
+\href{https://en.wikipedia.org/wiki/LaTeX }{\LaTeX }（拉泰赫）是一种基于\TeX 的排版系统，由由美国计算机学家Leslie Lamport（莱斯利·兰伯特）在20世纪80年代初期开发，
 因此被称为Lamport Tex，简称LaTeX。
 
-\subsection{使用哪个\LaTeX发行版}
-\LaTeX拥有众多的发行版，主要有一下几个：
+\subsection{使用哪个\LaTeX  发行版}
+\LaTeX  拥有众多的发行版，主要有一下几个：
 \begin{table}[!h]
   \centering
   %\renewcommand{\arraystretch}{1}
@@ -165,20 +165,20 @@ Donald E. Knuth（高德纳）发明的排版系统。TeX是特别优秀的排�
     \hline
     \href{http://www.tug.org/mactex/}{MacTex} & \xmark  & \xmark & \cmark  \\ \hline
     \end{tabular}\vspace{-6pt}
-  \caption{主要的\LaTeX发行版。
+  \caption{主要的\LaTeX  发行版。
   }\label{tab:latex-distr}%
 \end{table}%
 我比较推荐TexLive，因为它支持主流的平台，而且更新频率也比较高。
 
-\subsection{使用哪个\TeX编辑器}
-市面上的\TeX编辑器也是五花八门，选择一个合适的编辑器会让你事半功倍。
+\subsection{使用哪个\TeX 编辑器}
+市面上的\TeX 编辑器也是五花八门，选择一个合适的编辑器会让你事半功倍。
 我常用的编辑器是\href{http://www.xm1math.net/texmaker/}{TexMaker}，
 支持双栏预览，左边代码右边预览。
 当然也有很多其他的选择，比如Windows平台上比较常用的\href{http://www.winedt.com/}{WinEdit}。
 Vim用户还可以使用\href{https://github.com/lervag/vimtex}{VimTex}插件。
 
 \paragraph{在线编辑环境}现在有很多以\url{https://overleaf.com}为代表的
-在线的\LaTeX写作平台。
+在线的\LaTeX  写作平台。
 %
 这些在线平台普遍支持\red{多人协作}并内置了很多学术期刊会议的模板，而且编译环境在远端
 因此\red{不用配置本地环境和安装编辑器}。
@@ -191,10 +191,10 @@ Vim用户还可以使用\href{https://github.com/lervag/vimtex}{VimTex}插件。
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{公式}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-方便快捷的公式输入是\LaTeX相比于Word的主要优势之一，在熟练掌握的情况下
+方便快捷的公式输入是\LaTeX  相比于Word的主要优势之一，在熟练掌握的情况下
 公式输入的效率会有很大提升。
 
-\LaTeX中的公式主要分为两类：\red{行内公式}和\red{行间公式}。
+\LaTeX  中的公式主要分为两类：\red{行内公式}和\red{行间公式}。
 这是一个行内公式$f(x) = \frac{1}{\sqrt{2\pi}\sigma}\exp{(-\frac{(x-\mu)^2}{2\sigma^2})}$。下面是一个行间公式：
 $$
 f(x) = \frac{1}{\sqrt{2\pi}\sigma}\exp{(-\frac{(x-\mu)^2}{2\sigma^2})}
@@ -352,7 +352,7 @@ fig.savefig('bar3d.pdf')
 \section{图表}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{插入图片}
-\LaTeX支持多种格式的图片，其中包括png、jpg等常见位图，以及pdf、eps等\textbf{矢量图}格式。
+\LaTeX 支持多种格式的图片，其中包括png、jpg等常见位图，以及pdf、eps等\TeX tbf{矢量图}格式。
 矢量图尤其适合科技论文中用于数据展示的各种曲线图和柱状图、饼状图，因为无论如何缩放图像都不会失真。你可以尝试缩放生成的pdf文件到最大，然后观察图~\ref{fig1}，图~\ref{fig3}和图\ref{fig:fig3d}中的曲线。
 
 \begin{figure}[!h]
@@ -363,9 +363,9 @@ fig.savefig('bar3d.pdf')
 对于曲线图和柱状图等非照片类图表，我推荐插入pdf格式。pdf格式支持绝大部分主流平台(Windows, Linux, OSX)，而且可以方便的自由编辑，文件大小也比较小。
 如果你使用Python的Matplotlib画图，那么可以直接用matplotlib.pyplot.savefig()
 来导出.pdf格式的图片。
-如果你使用Matlab画图的话，只能导出eps格式的矢量图。在\LaTeX中插入eps也没有问题，
+如果你使用Matlab画图的话，只能导出eps格式的矢量图。在\LaTeX 中插入eps也没有问题，
 但是eps文件比同等条件的pdf稍大，而且不方便编辑。
-强迫症患者可以将eps转为pdf后再插入到\LaTeX。
+强迫症患者可以将eps转为pdf后再插入到\LaTeX 。
 
 同样是一行四列的布局，图~\ref{fig1}直接插入一个包含四个曲线图的pdf文件，
 而图~\ref{fig:fig3d}通过增加一个$1\times4$的表格，然后再每个表格单元中各自插入
@@ -403,10 +403,10 @@ fig.savefig('bar3d.pdf')
 \begin{figure}[!h]
 \centering
   \begin{tabular}{@{}cccc@{}}
-    \includegraphics[width=.25\textwidth]{figures/mplot3d}  &
-    \includegraphics[width=.25\textwidth]{figures/bar3d}  &
-    \includegraphics[width=.25\textwidth]{figures/surface3d} &
-    \includegraphics[width=.25\textwidth]{figures/trisurf3d} \\
+    \includegraphics[width=.25\TeX twidth]{figures/mplot3d}  &
+    \includegraphics[width=.25\TeX twidth]{figures/bar3d}  &
+    \includegraphics[width=.25\TeX twidth]{figures/surface3d} &
+    \includegraphics[width=.25\TeX twidth]{figures/trisurf3d} \\
     (a)M-plot 3D & (b)Bar-chart 3D & 
     (c)Surface 3D & (d) Tri-surface 3D \\
   \end{tabular}
@@ -414,7 +414,7 @@ fig.savefig('bar3d.pdf')
 \end{lstlisting}
 
 \subsection{绘图}
-除了通过直接插入已经生成的图像文件之外，\LaTeX 还可以通过 Tikz 宏包直接绘制函数图像。
+除了通过直接插入已经生成的图像文件之外，\LaTeX  还可以通过 Tikz 宏包直接绘制函数图像。
 %
 下面有几个使用Tikz包绘制三位函数曲面和直方图的例子，由于 Tikz 会让编译的时间变长，代码已经被注释。
 %
@@ -424,7 +424,7 @@ fig.savefig('bar3d.pdf')
 %\begin{figure}[!h]
 %\centering
 %\begin{tabular}{@{}cc@{}}
-%  \pgfplotsset{width=0.5\textwidth}
+%  \pgfplotsset{width=0.5\TeX twidth}
 %  \begin{tikzpicture}
 %    \begin{axis}[
 %    hide axis,                              %隐藏坐标
@@ -440,7 +440,7 @@ fig.savefig('bar3d.pdf')
 %    \end{axis}
 %  \end{tikzpicture} & 
 %  %==============================%
-%  \pgfplotsset{width=0.5\textwidth}
+%  \pgfplotsset{width=0.5\TeX twidth}
 %  \begin{tikzpicture}
 %    \begin{axis}[colorbar]         % 绘制坐标，并设置一个彩色指示条
 %    \addplot3[surf]                % 绘制三维图
@@ -454,7 +454,7 @@ fig.savefig('bar3d.pdf')
 %还有直方图：
 %\begin{figure}[!hbt]
 %\centering
-%\pgfplotsset{width=0.5\textwidth}
+%\pgfplotsset{width=0.5\TeX twidth}
 %\begin{tikzpicture}
 %\begin{axis}[ybar,enlargelimits=0.15]  % 绘制关于y坐标的条形图，条形之间的最大间隔是0.15cm
 %\addplot[draw=blue,fill=red]           % 蓝色边界、红色填充
@@ -475,12 +475,12 @@ fig.savefig('bar3d.pdf')
 %\end{figure}
 %
 
-本章节的所有图像都是\textbf{使用\LaTeX 代码直接绘制的}，并没有使用任何Matlab或者matplotlib等第三方程序生成图像。
+本章节的所有图像都是\TeX tbf{使用\LaTeX  代码直接绘制的}，并没有使用任何Matlab或者matplotlib等第三方程序生成图像。
 当然，生成的的图像全部都是矢量图。
 
 %\pagebreak
 \subsection{表格}
-\LaTeX使用table环境生成表格。下面就是生成表\ref{tab:performance}的\LaTeX代码：
+\LaTeX 使用table环境生成表格。下面就是生成表\ref{tab:performance}的\LaTeX 代码：
 
 \begin{lstlisting}[captionpos=b,language=Tex]
 \begin{table}[!h]
@@ -493,7 +493,7 @@ fig.savefig('bar3d.pdf')
     LMSDS~\cite{shen2017deepskeleton} & 0.365  & 0.392 & 0.293 & 0.174 \\
     LDLF~\cite{shen2017label} & 0.732  & 0.542 & 0.497 & 0.369 \\
     \hline
-    \textbf{FSDS} (ours) & 0.769  & 0.623 & 0.633 & 0.418 \\
+    \TeX tbf{FSDS} (ours) & 0.769  & 0.623 & 0.633 & 0.418 \\
     \hline
     \end{tabular}\vspace{-6pt}
   \caption{This is a table.}\label{tab:sk-fmeasure}\label{tab:performance}%
@@ -510,18 +510,18 @@ fig.savefig('bar3d.pdf')
     LMSDS~\cite{shen2017deepskeleton} & 0.365  & 0.392 & 0.293 & 0.174 \\
     LDLF~\cite{shen2017label} & 0.732  & 0.542 & 0.497 & 0.369 \\
     \hline
-    \textbf{FSDS} (ours) & 0.769  & 0.623 & 0.633 & 0.418 \\
+    \TeX tbf{FSDS} (ours) & 0.769  & 0.623 & 0.633 & 0.418 \\
     \hline
     \end{tabular}\vspace{-6pt}
   \caption{This is a table.}\label{tab:sk-fmeasure}\label{tab:performance}%
 \end{table}%
 
 \subsection{图表的排版和定位}\label{sec:location}
-\LaTeX相比Word有个缺点就是\emph{非所见即所得}。比如你的两个表格在代码中明明是
+\LaTeX 相比Word有个缺点就是\emph{非所见即所得}。比如你的两个表格在代码中明明是
 相邻一个在前一个在后的，然而排版出来的结果可能是两个被放到了不同的页面中，甚至先后顺序都不对应。
 %
 
-\LaTeX图表使用位置参数来确定元素的定位。位置参数有以下几种选项：h (here)、t (top)、b (bottom)、p (我也不知道)，分别表示把元素至于当前位置、当前页面的上方、下方。
+\LaTeX 图表使用位置参数来确定元素的定位。位置参数有以下几种选项：h (here)、t (top)、b (bottom)、p (我也不知道)，分别表示把元素至于当前位置、当前页面的上方、下方。
 当你有排版困惑，怎么弄也无法把图标放在自己想要的位置的时候（我经常遇到），最好的解决方法就是疯狂前后移动图表元素对应代码，总有一个位置会是对的。
 %
 \href{https://tex.stackexchange.com/questions/35125/how-to-use-the-placement-options-t-h-with-figures}{这里}是一个对位置参数的详细介绍。
@@ -529,7 +529,7 @@ fig.savefig('bar3d.pdf')
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{交叉引用}\label{sec:ref}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-交叉引用可以说是\LaTeX的核心竞争力了。
+交叉引用可以说是\LaTeX 的核心竞争力了。
 我们经常需要在论文中引用文献和文章中的图表，比如说：“根据文献
 ~\cite{shen2017label}，~\cite{shen2016object}和~\cite{shen2017deepskeleton}
 所描述的的方法，
@@ -547,11 +547,11 @@ fig.savefig('bar3d.pdf')
 或者有下面一个场景：当你完成第三章写作之后发现图3.6和图3.7之间要再插入一张图，然后
 你发现图3.7和图3.7之后的所有图片的标号都要改，而且你的文中所有引用到这些图的地方都需要修改。
 
-\textbf{\LaTeX强大的交叉引用功能}将把你从繁琐的文献/图表/公式标号中解放出来，
+\TeX tbf{\LaTeX 强大的交叉引用功能}将把你从繁琐的文献/图表/公式标号中解放出来，
 你只用关注写作本身，其他的事情会帮你自动完成。
 %
 当你写完一个图表/公式，给它添加一个label属性，然后在需要引用的地方使用ref\{the-label\}
-进行引用，\LaTeX将自动为你排好序号。
+进行引用，\LaTeX 将自动为你排好序号。
 %
 比如"根据文献~\cite{shen2017label}，~\cite{shen2016object}
 和~\cite{shen2017deepskeleton}所描述的的方法，
@@ -559,8 +559,8 @@ fig.savefig('bar3d.pdf')
 表~\ref{tab:sk-fmeasure}中的定量型能比较。从图~\ref{fig1}和表~\ref{tab:sk-fmeasure}的结果来看，~\cite{shen2016object}和~\cite{shen2017deepskeleton}
 具有较好的检测效果"。
 
-\TeX文档中的所有内容都可以添加label属性从而进行交叉引用。比如说文章的一个子章节
-(subsection)就可以被引用：第\ref{sec:location}章描述了如何对\TeX元素进行定位。
+\TeX 文档中的所有内容都可以添加label属性从而进行交叉引用。比如说文章的一个子章节
+(subsection)就可以被引用：第\ref{sec:location}章描述了如何对\TeX 元素进行定位。
 
 更强大的是，所有的生成的引用标号都是可以点击的，
 当你在生成的pdf中点击引用标号，将自动弹到对应的文献/图表/公式处。
@@ -576,13 +576,13 @@ fig.savefig('bar3d.pdf')
 \begin{itemize}
   \item 数学符号速查表 \url{http://web.ift.uib.no/Teori/KURS/WRK/TeX/symALL.html}
   \item 字体大小 \url{https://texblog.org/2012/08/29/changing-the-font-size-in-latex/}
-  \item 一个比较全的 \LaTeX \ WiKi \url{https://en.wikibooks.org/wiki/LaTeX}
+  \item 一个比较全的 \LaTeX  \ WiKi \url{https://en.wikibooks.org/wiki/LaTeX}
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{参考文献}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\LaTeX使用bib（或者latexbib）管理参考文献。新增参考文献条目时只需要在将bib格式的参考文献加入bib文件中，然后重新编译即可。在文中使用cite\{citationA\}引用即可。
+\LaTeX 使用bib（或者latexbib）管理参考文献。新增参考文献条目时只需要在将bib格式的参考文献加入bib文件中，然后重新编译即可。在文中使用cite\{citationA\}引用即可。
 点击参考文献编号\cite{shen2017deepskeleton}可跳转至对应的参考文献条目。
 
 %% 参考文献
@@ -603,7 +603,7 @@ fig.savefig('bar3d.pdf')
 \item “Object Skeleton Extraction in Natural Images by Fusing Scale-associated Deep Side Outputs",in \emph{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition}, June 2016.
 (IEEE CVPR为模式识别和计算机视觉的三大国际顶级会议，中国计算机协会列为A类会议，根据2017年谷歌学术统计，h5-index排名所有学术刊物第35位，位列工程和计算机领域所有学术刊物第一位。)
 
-\item “Skeletonization in Natural Images and Its Application to Object Recognition" in "\textbf{ Skeletonization: Theory, Methods, and Applications }", Punam Saha, Gunilla Borgefors, Gabriella Sanniti di Baja (Ed.), 
+\item “Skeletonization in Natural Images and Its Application to Object Recognition" in "\TeX tbf{ Skeletonization: Theory, Methods, and Applications }", Punam Saha, Gunilla Borgefors, Gabriella Sanniti di Baja (Ed.), 
 Academic Press, 2017. ISBN: 978-0-081-01291-8. (本书为爱思唯尔 Elsevier出版的学术专著。)
 
 \item “DeepSkeleton: Learning Multi-task Scale-associated Deep Side Outputs for Object Skeleton Extraction in Natural Images",in \emph{IEEE Transactions on Image Processing}, 2017.(注：第二作者，导师第一作者。IEEE TIP是中国计算机协会A类、图像处理领域的顶级期刊，SCI II区。)
@@ -613,7 +613,7 @@ Academic Press, 2017. ISBN: 978-0-081-01291-8. (本书为爱思唯尔 Elsevier�
 \item “基于对称轴的自然图像中物体部件检测”，《中国科技论文》第14期。
 
 \end{enumerate}
-%\emph{IEEE Conference on Computer Vision and Pattern Recognition}(\textbf{CVPR})，是计算机视觉领域三大国际顶级会议(CVPR, ECCV, ICCV)之一。
+%\emph{IEEE Conference on Computer Vision and Pattern Recognition}(\TeX tbf{CVPR})，是计算机视觉领域三大国际顶级会议(CVPR, ECCV, ICCV)之一。
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
